@@ -16,8 +16,8 @@ var opts = {
     strings: [
         "HAPPY",
         "BIRTHDAY",
-        "TO YOU!",
-        "(HAPPY BIRTHDAY TO YOU ROHITH)"
+        "TO YOU",
+        "HAPPY BIRTHDAY TO YOU ROHITH!"
     ],
     charSpacing: 55,
     lineHeight: 55,
