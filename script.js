@@ -1,3 +1,4 @@
+var c = document.getElementById("c");
 var w = c.width = window.innerWidth,
 		h = c.height = window.innerHeight,
 		ctx = c.getContext( '2d' ),
@@ -6,7 +7,7 @@ var w = c.width = window.innerWidth,
 		hh = h / 2,
 		
 		opts = {
-			strings: [ 'HAPPY', 'BIRTHDAY', 'TO YOU!' ],
+			strings: [ 'HAPPY', 'BIRTHDAY', 'TO YOU!', 'ROHITH' ],
 			charSize: 30,
 			charSpacing: 35,
 			lineHeight: 40,
