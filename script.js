@@ -383,13 +383,19 @@ function anim() {
             letters[l].reset();
 }
 
-for (var i = 0; i < opts.strings.length; ++i) {
-    for (var j = 0; j < opts.strings[i].length; ++j) {
-        letters.push(new Letter(opts.strings[i][j],
-            j * opts.charSpacing + opts.charSpacing / 2 - opts.strings[i].length * opts.charSize / 2,
-            i * opts.lineHeight + opts.lineHeight / 2 - opts.strings.length * opts.lineHeight / 2));
+for (let i = 0; i < opts.strings.length; i++) {
+    let line = opts.strings[i];
+    let totalWidth = line.length * opts.charSpacing;
+
+    for (let j = 0; j < line.length; j++) {
+        letters.push(new Letter(
+            line[j],
+            j * opts.charSpacing - totalWidth / 2,
+            i * opts.lineHeight - (opts.strings.length * opts.lineHeight) / 2
+        ));
     }
 }
+
 
 anim();
 
